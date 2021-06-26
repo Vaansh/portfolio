@@ -1,0 +1,83 @@
+<!-- resume Section
+   ================================================== -->
+<section id="resume" class="grey-section">
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>Resume</h5>
+      <h1>More of my credentials.</h1>
+
+      <p class="lead">
+        Here is a visual summary of my career and academic success so far.
+      </p>
+    </div>
+  </div>
+  <!-- /section-intro-->
+
+  <div class="row resume-timeline">
+    <div class="col-twelve resume-header">
+      <h2>Work Experience</h2>
+    </div>
+    <!-- /resume-header -->
+
+    <div class="col-twelve">
+      <div class="timeline-wrap">
+        {% for work in site.data.work %}
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-briefcase"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>{{work.position}}</h3>
+            <p>{{work.from}} – {{work.end}}</p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>{{work.company}}</h4>
+            <p>{{work.description}}</p>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- /timeline-block -->
+      </div>
+      <!-- /timeline-wrap -->
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /resume-timeline -->
+
+  <div class="row resume-timeline">
+    <div class="col-twelve resume-header">
+      <h2>Education</h2>
+    </div>
+    <!-- /resume-header -->
+
+    <div class="col-twelve">
+      <div class="timeline-wrap">
+        {% for education in site.data.education %}
+        <div class="timeline-block">
+          <div class="timeline-ico">
+            <i class="fa fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline-header">
+            <h3>{{education.degree}}</h3>
+            <p>{{education.from}} – {{education.end}}</p>
+          </div>
+
+          <div class="timeline-content">
+            <h4>{{education.institution}}</h4>
+            <p>{{education.line1}}<br />{{education.line2}}</p>
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- /timeline-block -->
+      </div>
+      <!-- /timeline-wrap -->
+    </div>
+    <!-- /col-twelve -->
+  </div>
+  <!-- /resume-timeline -->
+</section>
+<!-- /features -->

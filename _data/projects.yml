@@ -1,7 +1,7 @@
 - index: 01
   title: LiReddit
   type: React, TypeScript, GraphQL, URQL, Node.js, PostgreSQL, TypeORM
-  link: a
+  link: https://github.com/vaansh/lireddit
   desc: >
     A fullstack TypeScript React GraphQL website where users can share texts of data to a mutual wall. 
     Used Chakra UI as the React library to style the frontend with Next.js and URQL/Apollo as the GraphQL Clients. 
@@ -10,14 +10,14 @@
 - index: 02
   title: Workflow Automation
   type: Reddit API, Pillow, Web Selenium, AppleScript, Pyautogui, AWS
-  link: a
+  link: https://github.com/Vaansh/Reddit-to-Instagam-Automation
   desc: >
     Worked on multiple ways to automate the workflow for social media, with PRAW using Selenium Web Driver. 
     Run on Amazon web services EC2 instance (Ubuntu) to maintain pages with over 45,000 followers on instagram.
 - index: 03
   title: Rest API .NET 5
   type: .NET 5 Framework, Postman, MVC, MongoDB, RESTful APIs, Docker
-  link: a
+  link: https://github.com/Vaansh/.NET5-REST-API-Catalog
   desc: >
     An asynchronous REST API made using the .NET 5 framework that is used to store the name and price of products.
     Used a MongoDB (NoSQL) repository and tested CRUD endpoints with SwaggerUI and Postman.
@@ -26,20 +26,20 @@
 - index: 04
   title: Multithreaded Banking System
   type: Java (OS Concepts)
-  link: a
+  link: 
   desc: >
     A multithreaded banking system made to practice concepts like semaphores, concurrency, etc.
 - index: 05
   title: Cyclone - The Game
   type: C#, Unity Engine
-  link: a
+  link: https://github.com/Vaansh/Multithreaded-Banking-System
   desc: >
     An android mobile game Made in the Unity game engine and written in C#.
     Second Runners Up in Inter School Software Development Competition, ACUITY 2018.
 - index: 06
   title: BeastFit
   type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL
-  link: a
+  link: https://github.com/SOEN287Chads/beast
   desc: >
     Worked in a team of 6: organized meetings, delegated tasks, helped teammates debug, etc. 
     Created and designed home, payment and error pages as well as navigation bar/footer. 

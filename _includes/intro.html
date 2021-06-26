@@ -14,16 +14,21 @@
           <span>Student</span>
         </p>
 
-        <a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+        <a class="button stroke smoothscroll" href="#about" title=""
+          >More About Me</a
+        >
       </div>
     </div>
   </div>
   <!-- /intro-content -->
 
-<ul class="intro-social">                          
-  {% for platform in site.data.socials %}
-    <li><a href={{platform.link}}><i class="fa fa-{{platform.name}}"></i></a></li>          
-  {% endfor %} 
-</ul> <!-- /intro-social -->      	
-
-</section> <!-- /intro -->
+  <ul class="intro-social">
+    {% for platform in site.data.socials %}
+    <li>
+      <a href="{{platform.link}}"><i class="fa fa-{{platform.name}}"></i></a>
+    </li>
+    {% endfor %}
+  </ul>
+  <!-- /intro-social -->
+</section>
+<!-- /intro -->

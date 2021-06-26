@@ -10,9 +10,11 @@
         <img src="assets/images/profile-pic.jpg" alt="Profile Picture" />
 
         <p class="lead">
-          I'm a 19 year old computer science student at <a href="https://www.concordia.ca/">Concordia University</a>. 
-          My day usually consists of me playing around with new tools, listening to podcasts, and of course, 
-          <del>sleeping</del> working. You can learn more about me and my
+          I'm a 19 year old computer science student at
+          <a href="https://www.concordia.ca/">Concordia University</a>. My day
+          usually consists of me playing around with new tools, listening to
+          podcasts, and of course, <del>sleeping</del> working. You can learn
+          more about me and my
           <a class="smoothscroll" href="#portfolio">projects</a>. below!
         </p>
       </div>
@@ -30,7 +32,7 @@
         <div class="table-responsive">
           <table>
             <tbody>
-              {% for tool in site.data.tools %}                              
+              {% for tool in site.data.tools %}
               <tr>
                 <td>{{tool.function}}</td>
                 <td>{{tool.tool}}</td>
@@ -44,7 +46,7 @@
 
         <ul class="disc">
           {% for venture in site.data.ventures %}
-            <li>{{venture.name}}</li>   
+          <li>{{venture.name}}</li>
           {% endfor %}
         </ul>
       </ul>
@@ -56,10 +58,8 @@
 
       <p align="center">
         {% for skill in site.data.skills %}
-          <img
-            src="{{skill.link}}"
-          />
-        {% endfor %}        
+        <img src="{{skill.link}}" />
+        {% endfor %}
       </p>
     </div>
   </div>
@@ -69,7 +69,11 @@
       <a href="#contact" title="Hire Me" class="button stroke smoothscroll">
         Find Me
       </a>
-      <a href="#" title="Download CV" class="button button-primary">
+      <a
+        href="/assets/images/uploads/resume.pdf"
+        title="Download CV"
+        class="button button-primary"
+      >
         Download Resume
       </a>
     </div>

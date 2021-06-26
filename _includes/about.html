@@ -30,22 +30,12 @@
         <div class="table-responsive">
           <table>
             <tbody>
+              {% for tool in site.data.tools %}                              
               <tr>
-                <td>WM</td>
-                <td>Yabai</td>
+                <td>{{tool.function}}</td>
+                <td>{{tool.tool}}</td>
               </tr>
-              <tr>
-                <td>Shell</td>
-                <td>Zsh</td>
-              </tr>
-              <tr>
-                <td>Terminal</td>
-                <td>iTerm2</td>
-              </tr>
-              <tr>
-                <td>Editors</td>
-                <td>Emacs, VSCode, Vim/NeoVim</td>
-              </tr>
+              {% endfor %}
             </tbody>
           </table>
         </div>
@@ -53,9 +43,9 @@
         <strong>Future Ventures:</strong>
 
         <ul class="disc">
-          <li>Automation</li>
-          <li>AI/ML</li>
-          <li>Security</li>
+          {% for venture in site.data.ventures %}
+            <li>{{venture.name}}</li>   
+          {% endfor %}
         </ul>
       </ul>
       <!-- /info-list -->
@@ -65,9 +55,9 @@
       <h3>Skills</h3>
 
       <p align="center">
-        {% for item in site.data.skills %}
+        {% for skill in site.data.skills %}
           <img
-            src="{{item.link}}"
+            src="{{skill.link}}"
           />
         {% endfor %}        
       </p>

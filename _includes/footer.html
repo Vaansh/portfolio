@@ -2,13 +2,12 @@
 ================================================== -->
     <footer>
         <div class="row">  
-            <div class="col-six tab-full pull-right social">  
-                <ul class="footer-social">        
-                    <li><a href="https://twitter.com/vaansh_lakhwara"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="https://github.com/Vaansh"><i class="fa fa-github"></i></a></li>
-                    <li><a href="https://ca.linkedin.com/in/vaansh"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/1nshed"><i class="fa fa-instagram"></i></a></li>
-                </ul>              
+            <div class="col-six tab-full pull-right social">                                                    
+                <ul class="footer-social">                          
+                    {% for platform in site.data.socials %}
+                      <li><a href={{platform.link}}><i class="fa fa-{{platform.name}}"></i></a></li>          
+                    {% endfor %} 
+                </ul> 
         </div>
         <div class="copyright">		        	
             <a style="color: rgb(49, 49, 49);" href="http://www.styleshout.com/">cred: styleshout</a>

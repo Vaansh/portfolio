@@ -16,10 +16,10 @@
               Home
             </a>
           </li>
-          {% for item in site.data.navbar %}
+          {% for section in site.data.navbar %}
           <li>
-            <a class="smoothscroll" href="#{{item.href}}" title="">
-              {{item.section_name}}
+            <a class="smoothscroll" href="#{{section.href}}" title="">
+              {{section.section_name}}
             </a>
           </li>
           {% endfor %}

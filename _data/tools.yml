@@ -1,0 +1,8 @@
+- function: WM
+  tool: Yabai
+- function: Shell
+  tool: Zsh
+- function: Terminal
+  tool: iTerm2
+- function: Editors
+  tool: Emacs, VSCode, Vim/NeoVim

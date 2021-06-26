@@ -1,5 +1,5 @@
 - index: 01
-  title: LiReddit 
+  title: LiReddit
   type: React, TypeScript, GraphQL, URQL, Node.js, PostgreSQL, TypeORM
   link: a
   desc: >
@@ -13,7 +13,7 @@
   link: a
   desc: >
     Worked on multiple ways to automate the workflow for social media, with PRAW using Selenium Web Driver. 
-    Run on Amazon web services EC2 instance (Ubuntu) to maintain pages with over 45,000 followers on instagram. 
+    Run on Amazon web services EC2 instance (Ubuntu) to maintain pages with over 45,000 followers on instagram.
 - index: 03
   title: Rest API .NET 5
   type: .NET 5 Framework, Postman, MVC, MongoDB, RESTful APIs, Docker
@@ -38,7 +38,7 @@
     Second Runners Up in Inter School Software Development Competition, ACUITY 2018.
 - index: 06
   title: BeastFit
-  type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL  
+  type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL
   link: a
   desc: >
     Worked in a team of 6: organized meetings, delegated tasks, helped teammates debug, etc. 

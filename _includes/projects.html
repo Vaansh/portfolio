@@ -7,7 +7,8 @@
       <h1>Check Out Some of My Works.</h1>
 
       <p class="lead">
-        I like working on projects on my own time, <mark>click on them</mark> to know more.
+        I like working on projects on my own time, <mark>click on them</mark> to
+        know more.
       </p>
     </div>
   </div>
@@ -15,12 +16,15 @@
 
   <div class="row portfolio-content">
     <div class="col-twelve">
-    {% for project in site.data.projects %}
+      {% for project in site.data.projects %}
       <!-- portfolio-wrapper -->
       <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
         <div class="bgrid folio-item">
           <div class="item-wrap">
-            <img src="assets/images/portfolio/{{project.title}}.jpg" alt="{{project.title}}" />
+            <img
+              src="assets/images/portfolio/{{project.title}}.jpg"
+              alt="{{project.title}}"
+            />
             <a href="#modal-{{project.index}}" class="overlay">
               <div class="folio-item-table">
                 <div class="folio-item-cell">
@@ -30,21 +34,22 @@
               </div>
             </a>
           </div>
-        </div>        
+        </div>
         {% endfor %}
         <!-- /folio-item -->
         <!-- modal popups - begin
-            ============================================================= -->        
-        {% for project in site.data.projects %}          
+            ============================================================= -->
+        {% for project in site.data.projects %}
         <div id="modal-{{project.index}}" class="popup-modal slider mfp-hide">
           <div class="media">
-            <img src="assets/images/portfolio/modals/m-{{project.title}}.jpg" alt="{{project.title}}" />
-          </div>          
+            <img
+              src="assets/images/portfolio/modals/m-{{project.title}}.jpg"
+              alt="{{project.title}}"
+            />
+          </div>
           <div class="description-box">
             <h4>{{project.title}}</h4>
-            <p>
-              {{project.desc}}
-            </p>
+            <p>{{project.desc}}</p>
             <div class="categories">{{project.type}}</div>
           </div>
           <div class="link-box">

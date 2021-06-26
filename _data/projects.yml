@@ -26,17 +26,10 @@
 - index: 04
   title: Multithreaded Banking System
   type: Java (OS Concepts)
-  link: 
+  link: https://github.com/Vaansh/Multithreaded-Banking-System
   desc: >
     A multithreaded banking system made to practice concepts like semaphores, concurrency, etc.
 - index: 05
-  title: Cyclone - The Game
-  type: C#, Unity Engine
-  link: https://github.com/Vaansh/Multithreaded-Banking-System
-  desc: >
-    An android mobile game Made in the Unity game engine and written in C#.
-    Second Runners Up in Inter School Software Development Competition, ACUITY 2018.
-- index: 06
   title: BeastFit
   type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL
   link: https://github.com/SOEN287Chads/beast
@@ -46,3 +39,10 @@
     Implemented backend signup/login functionality. Hashed sensitive user information stored in the database. 
     Added Stripe API to add a layer of security for payment and keep transaction history. Configured test API keys. 
     Integrated the payment process with the product cart and added order confirmation through mail.
+- index: 06
+  title: Cyclone - The Game
+  type: C#, Unity Engine
+  link: https://github.com/Vaansh/Cyclone-The-Game
+  desc: >
+    An android mobile game Made in the Unity game engine and written in C#.
+    Second Runners Up in Inter School Software Development Competition, ACUITY 2018.

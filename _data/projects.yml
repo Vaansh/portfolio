@@ -1,3 +1,18 @@
-- index: 
-  title:   
-  type: 
+- index: 01
+  title: LiReddit 
+  type: React, TypeScript, GraphQL, URQL, Node.js, PostgreSQL, TypeORM
+- index: 02
+  title: Workflow Automation
+  type: Reddit API, Pillow, Web Selenium, AppleScript, Pyautogui, AWS
+- index: 03
+  title: Rest API .NET 5
+  type: .NET 5 Framework, Postman, MVC, MongoDB, RESTful APIs, Docker
+- index: 04
+  title: Multithreaded Banking System
+  type: Java (OS Concepts)
+- index: 05
+  title: Cyclone - The Game
+  type: C#, Unity Engine
+- index: 06
+  title: BeastFit
+  type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL  

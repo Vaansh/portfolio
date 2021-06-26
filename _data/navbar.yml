@@ -1,0 +1,8 @@
+- section_name: About
+  href: about
+- section_name: Resume
+  href: resume
+- section_name: Projects
+  href: portfolio
+- section_name: Contact
+  href: contact

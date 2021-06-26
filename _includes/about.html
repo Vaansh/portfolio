@@ -1,0 +1,88 @@
+<!-- about section
+================================================== -->
+<section id="about">
+  <div class="row section-intro">
+    <div class="col-twelve">
+      <h5>About</h5>
+      <h1>Let me introduce myself.</h1>
+
+      <div class="intro-info">
+        <img src="assets/images/profile-pic.jpg" alt="Profile Picture" />
+
+        <p class="lead">
+          I'm a 19 year old computer science student at <a href="https://www.concordia.ca/">Concordia University</a>. 
+          My day usually consists of me playing around with new tools, listening to podcasts, and of course, 
+          <del>sleeping</del> working. You can learn more about me and my
+          <a class="smoothscroll" href="#portfolio">projects</a>. below!
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- /section-intro -->
+
+  <div class="row about-content">
+    <div class="col-six tab-full">
+      <h3>Profile</h3>
+
+      <ul class="info-list">
+        <strong>Tools:</strong>
+
+        <div class="table-responsive">
+          <table>
+            <tbody>
+              <tr>
+                <td>WM</td>
+                <td>Yabai</td>
+              </tr>
+              <tr>
+                <td>Shell</td>
+                <td>Zsh</td>
+              </tr>
+              <tr>
+                <td>Terminal</td>
+                <td>iTerm2</td>
+              </tr>
+              <tr>
+                <td>Editors</td>
+                <td>Emacs, VSCode, Vim/NeoVim</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <strong>Future Ventures:</strong>
+
+        <ul class="disc">
+          <li>Automation</li>
+          <li>AI/ML</li>
+          <li>Security</li>
+        </ul>
+      </ul>
+      <!-- /info-list -->
+    </div>
+
+    <div class="col-six tab-full">
+      <h3>Skills</h3>
+
+      <p align="center">
+        {% for item in site.data.skills %}
+          <img
+            src="{{item.link}}"
+          />
+        {% endfor %}        
+      </p>
+    </div>
+  </div>
+
+  <div class="row button-section">
+    <div class="col-twelve">
+      <a href="#contact" title="Hire Me" class="button stroke smoothscroll">
+        Find Me
+      </a>
+      <a href="#" title="Download CV" class="button button-primary">
+        Download Resume
+      </a>
+    </div>
+  </div>
+</section>
+<!-- /process-->

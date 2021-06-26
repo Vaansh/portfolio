@@ -1,0 +1,33 @@
+<!-- navbar 
+   ================================================== -->
+<header>
+  <div class="row">
+    <div class="top-bar">
+      <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+      <div class="logo">
+        <a class="menu-toggle" href="#">Sections</a>
+      </div>
+
+      <nav id="main-nav-wrap">
+        <ul class="main-navigation">
+          <li class="current">
+            <a class="smoothscroll" href="#intro" title="">
+              Home
+            </a>
+          </li>
+          {% for item in site.data.navbar %}
+          <li>
+            <a class="smoothscroll" href="#{{item.href}}" title="">
+              {{item.section_name}}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <!-- /top-bar -->
+  </div>
+  <!-- /row -->
+</header>
+<!-- /header -->

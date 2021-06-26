@@ -21,7 +21,7 @@
         <div class="bgrid folio-item">
           <div class="item-wrap">
             <img src="assets/images/portfolio/{{project.title}}.jpg" alt="{{project.title}}" />
-            <a href="#modal-{project.index}" class="overlay">
+            <a href="#modal-{{project.index}}" class="overlay">
               <div class="folio-item-table">
                 <div class="folio-item-cell">
                   <h3 class="folio-title">{{project.title}}</h3>
@@ -30,149 +30,30 @@
               </div>
             </a>
           </div>
-        </div>
-        <!-- /folio-item -->
+        </div>        
         {% endfor %}
+        <!-- /folio-item -->
         <!-- modal popups - begin
-            ============================================================= -->
-        <div id="modal-01" class="popup-modal slider mfp-hide">
+            ============================================================= -->        
+        {% for project in site.data.projects %}          
+        <div id="modal-{{project.index}}" class="popup-modal slider mfp-hide">
           <div class="media">
-            <img src="assets/images/portfolio/modals/m-liberty.jpg" alt="" />
-          </div>
-
+            <img src="assets/images/portfolio/modals/m-{{project.title}}.jpg" alt="{{project.title}}" />
+          </div>          
           <div class="description-box">
-            <h4>Liberty</h4>
+            <h4>{{project.title}}</h4>
             <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
+              {{project.desc}}
             </p>
-
-            <div class="categories">Web Development</div>
+            <div class="categories">{{project.type}}</div>
           </div>
-
           <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
+            <a href="{{project.link}}">Details</a>
             <a href="#" class="popup-modal-dismiss">Close</a>
           </div>
         </div>
-        <!-- /modal-01 -->
-
-        <div id="modal-02" class="popup-modal slider mfp-hide">
-          <div class="media">
-            <img src="assets/images/portfolio/modals/m-shutterbug.jpg" alt="" />
-          </div>
-
-          <div class="description-box">
-            <h4>Shutterbug</h4>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
-            </p>
-
-            <div class="categories">Web Design</div>
-          </div>
-
-          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
-            <a href="#" class="popup-modal-dismiss">Close</a>
-          </div>
-        </div>
-        <!-- /modal-02 -->
-
-        <div id="modal-03" class="popup-modal slider mfp-hide">
-          <div class="media">
-            <img src="assets/images/portfolio/modals/m-clouds.jpg" alt="" />
-          </div>
-
-          <div class="description-box">
-            <h4>Clouds</h4>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
-            </p>
-
-            <div class="categories">Web Design</div>
-          </div>
-
-          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
-            <a href="#" class="popup-modal-dismiss">Close</a>
-          </div>
-        </div>
-        <!-- /modal-03 -->
-
-        <div id="modal-04" class="popup-modal slider mfp-hide">
-          <div class="media">
-            <img src="assets/images/portfolio/modals/m-beetle.jpg" alt="" />
-          </div>
-
-          <div class="description-box">
-            <h4>Beetle</h4>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
-            </p>
-
-            <div class="categories">Branding</div>
-          </div>
-
-          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
-            <a href="#" class="popup-modal-dismiss">Close</a>
-          </div>
-        </div>
-        <!-- /modal-04 -->
-
-        <div id="modal-05" class="popup-modal slider mfp-hide">
-          <div class="media">
-            <img src="assets/images/portfolio/modals/m-lighthouse.jpg" alt="" />
-          </div>
-
-          <div class="description-box">
-            <h4>Lighthouse</h4>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
-            </p>
-
-            <div class="categories">Web Development</div>
-          </div>
-
-          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
-            <a href="#" class="popup-modal-dismiss">Close</a>
-          </div>
-        </div>
-        <!-- /modal-05 -->
-
-        <div id="modal-06" class="popup-modal slider mfp-hide">
-          <div class="media">
-            <img src="assets/images/portfolio/modals/m-salad.jpg" alt="" />
-          </div>
-
-          <div class="description-box">
-            <h4>Salad</h4>
-            <p>
-              Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-              lorem quis bibendum auctor, nisi elit consequat ipsum, nec
-              sagittis sem nibh id elit.
-            </p>
-
-            <div class="categories">Branding</div>
-          </div>
-
-          <div class="link-box">
-            <a href="http://www.behance.net">Details</a>
-            <a href="#" class="popup-modal-dismiss">Close</a>
-          </div>
-        </div>
-        <!-- /modal-06 -->
-
+        {% endfor %}
+        <!-- /modals -->
         <!-- modal popups - end
             ============================================================= -->
       </div>

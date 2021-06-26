@@ -1,18 +1,48 @@
 - index: 01
   title: LiReddit 
   type: React, TypeScript, GraphQL, URQL, Node.js, PostgreSQL, TypeORM
+  link: a
+  desc: >
+    A fullstack TypeScript React GraphQL website where users can share texts of data to a mutual wall. 
+    Used Chakra UI as the React library to style the frontend with Next.js and URQL/Apollo as the GraphQL Clients. 
+    Created backend using PostgreSQL with MikroORM/TypeORM for migrations and Redis to store sessions. 
+    Made a docker image and deployed backend running dokku and frontend to vercel.
 - index: 02
   title: Workflow Automation
   type: Reddit API, Pillow, Web Selenium, AppleScript, Pyautogui, AWS
+  link: a
+  desc: >
+    Worked on multiple ways to automate the workflow for social media, with PRAW using Selenium Web Driver. 
+    Run on Amazon web services EC2 instance (Ubuntu) to maintain pages with over 45,000 followers on instagram. 
 - index: 03
   title: Rest API .NET 5
   type: .NET 5 Framework, Postman, MVC, MongoDB, RESTful APIs, Docker
+  link: a
+  desc: >
+    An asynchronous REST API made using the .NET 5 framework that is used to store the name and price of products.
+    Used a MongoDB (NoSQL) repository and tested CRUD endpoints with SwaggerUI and Postman.
+    Practiced dependency injection and implemented Data Transfer Objects (DTOs).
+    Created a docker image and stood up a kubernetes cluster in the box.
 - index: 04
   title: Multithreaded Banking System
   type: Java (OS Concepts)
+  link: a
+  desc: >
+    A multithreaded banking system made to practice concepts like semaphores, concurrency, etc.
 - index: 05
   title: Cyclone - The Game
   type: C#, Unity Engine
+  link: a
+  desc: >
+    An android mobile game Made in the Unity game engine and written in C#.
+    Second Runners Up in Inter School Software Development Competition, ACUITY 2018.
 - index: 06
   title: BeastFit
   type: PHP, JavaScript, Stripe API, HTML, CSS, MySQL  
+  link: a
+  desc: >
+    Worked in a team of 6: organized meetings, delegated tasks, helped teammates debug, etc. 
+    Created and designed home, payment and error pages as well as navigation bar/footer. 
+    Implemented backend signup/login functionality. Hashed sensitive user information stored in the database. 
+    Added Stripe API to add a layer of security for payment and keep transaction history. Configured test API keys. 
+    Integrated the payment process with the product cart and added order confirmation through mail.

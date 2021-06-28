@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+    workflow_dispatch:
 
 jobs:
   deploy:
@@ -13,5 +14,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Build and Deploy
         uses: helaili/jekyll-action@2.2.0
-        with:
+        env:
           token: ${{ secrets.JEKYLL_PAT }}

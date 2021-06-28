@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: Clone
         uses: actions/checkout@v2
+
       - name: Build and Deploy
         uses: helaili/jekyll-action@2.2.0
+
         env:
           token: ${{ secrets.JEKYLL_PAT }}

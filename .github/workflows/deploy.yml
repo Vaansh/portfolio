@@ -1,0 +1,17 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone
+        uses: actions/checkout@v2
+      - name: Build and Deploy
+        uses: helaili/jekyll-action@2.2.0
+        with:
+          token: ${{ secrets.JEKYLL_PAT }}
